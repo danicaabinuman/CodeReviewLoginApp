@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CodeReviewLoginApp</string>
+
+    <!--Login Page-->
+    <string name="questronix_login">Questronix Login</string>
+    <string name="username_hint">Username</string>
+    <string name="login">Login</string>
+
+    <!-- Bottom Nav -->
+    <string name="account_label">Accounts</string>
+    <string name="transact_label">Transact</string>
+    <string name="approvals_label">Approvals</string>
+    <string name="alerts_label">Alerts</string>
+    <string name="settings_label">Settings</string>
+
+    <!-- Account Fragment -->
+
+
+</resources>

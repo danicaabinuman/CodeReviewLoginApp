@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        android:title="@string/account_label"/>
+
+    <item android:id="@+id/transact"
+        android:icon="@drawable/ic_transact"
+        android:title="@string/transact_label"/>
+
+    <item android:id="@+id/approval"
+        android:icon="@drawable/ic_approval"
+        android:title="@string/approvals_label"/>
+    <item android:id="@+id/alert"
+        android:icon="@drawable/ic_alert"
+        android:title="@string/alerts_label"/>
+    <item android:id="@+id/setting"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings_label"/>
+
+</menu>
