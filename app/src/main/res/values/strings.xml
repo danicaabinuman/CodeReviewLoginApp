@@ -14,6 +14,6 @@
     <string name="settings_label">Settings</string>
 
     <!-- Account Fragment -->
-
+    <string name="empty_account">No Accounts!</string>
 
 </resources>

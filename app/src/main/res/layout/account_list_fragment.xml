@@ -1,36 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.dashboard.accounts.AccountsFragment">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="10dp"
+    android:background="@color/teal_200">
+
+    <TextView
+        style="@style/WrapContent"
+        android:layout_centerInParent="true"
+        android:text="@string/account_label"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+</RelativeLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/accountList"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.fragment.AccountsFragment">
 
+    />
     <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/teal_200"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/empty_view"
+        style="@style/MatchParent"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/empty_log_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_alert"
+            android:layout_centerInParent="true"/>
 
         <TextView
-            android:id="@+id/accountTv"
-            style="@style/WrapContent"
-            android:layout_centerInParent="true"
-            android:text="@string/account_label"
-            android:textColor="#fff"
-            android:textSize="17sp" />
-
+            style="@style/EmptyLogsText"
+            android:text="@string/empty_account"
+            android:layout_below="@+id/empty_log_iv"
+            android:layout_centerInParent="true"/>
     </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/accountList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        app:layout_constraintBottom_toBottomOf="parent"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

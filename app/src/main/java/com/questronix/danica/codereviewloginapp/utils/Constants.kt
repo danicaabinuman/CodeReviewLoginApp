@@ -1,3 +1,3 @@
 package com.questronix.danica.codereviewloginapp.utils
 
-const val BASE_URL: String = "https://jsonplaceholder.typicode.com/"
+const val SOURCE_FILE_NAME : String = "users.json"

@@ -16,14 +16,14 @@
         <TextView
             style="@style/WrapContent"
             android:layout_centerInParent="true"
-            android:text="@string/transact_label"
+            android:text="@string/alerts_label"
             android:textColor="#fff"
             android:textSize="17sp" />
 
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/transacList"
+        android:id="@+id/alertList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
