@@ -74,9 +74,31 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
     </style>
+
+
     <style name="EmptyLogsText" parent="TextViewBoldWrapContent">
         <item name="android:textSize">40dp</item>
         <item name="android:gravity">center</item>
+    </style>
+    <!-- Log List -->
+    <style name="LogItem" parent="FitWidth">
+        <item name="android:background">@drawable/box</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
 
     </style>
+
+    <style name="LogNameText" parent="TextViewRegularWrapContent">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="LogClientText" parent="TextViewBoldWrapContent">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="LogDateText" parent="TextViewRegularWrapContent">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
 </resources>
